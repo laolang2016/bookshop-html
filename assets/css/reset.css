@@ -51,6 +51,9 @@ img{
     border: none;
     vertical-align: top;
 }
+a{
+    text-decoration: none;
+}
 .fl{
     float: left;
 }
@@ -59,3 +62,7 @@ img{
 }
 .clearfix:after{content: ""; display: block; clear: both; }
 .clearfix{*zoom:1;}
+
+.bg-pink{background-color: pink;}
+.bg-blue{background-color: blue}
+.bg-black{background-color: black}

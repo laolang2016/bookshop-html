@@ -1,0 +1,78 @@
+/*
+公用样式
+*/
+.g-width{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-box{
+    background-color: #F9F9F9;
+}
+
+#header{
+    height: 34px;
+}
+
+#send-to{
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    margin-top: 3px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#send-to span{
+    border: 1px solid #F9F9F9;
+    position: absolute;
+    border-bottom: none;
+    display: block;
+    line-height: 22px;
+    height: 22px;
+    width: 80px;
+    padding: 4px 22px 0 9px;
+    margin-top: 3px;
+    background: url(../../assets/image/web/head_sprite.png) no-repeat right -303px;
+}
+
+#send-to .hover{
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    background-color: #fff;
+    background-position: right -320px;
+    z-index: 10;
+}
+
+#send-list{
+    position: absolute;
+    z-index: 5;
+    top: 29px;
+    left: 0;
+    background-color: #ffffff;
+    width: 298px;
+    border: 1px solid #e6e6e6;
+    padding: 0 0 10px 10px;
+    display: none;
+}
+
+#send-list li{
+    display: inline-block;
+    float: left;
+}
+
+#send-list li a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+}
+
+#send-list li a:hover{
+    color: red;
+}
+
+
+
+
+

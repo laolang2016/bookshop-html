@@ -5,15 +5,119 @@
     <title>网上书店</title>
 
     <link type="text/css" rel="stylesheet" href="../assets/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css"/>
+
+    <style type="text/css">
+        .box{
+            position: relative;
+        }
+        .one{
+            width: 200px;
+            height: 200px;
+            background: black;
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: 0;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            position: absolute;
+            z-index: 20;
+            left: 50px;
+            top: 50px;
+        }
+        .three{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            z-index: 30;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
 </head>
 <body>
+<!-- header -->
+<div id="header-box">
+    <div id="header" class="g-width clearfix">
+        <div id="send-to">
+            <span>送至：<i>北京</i></span>
+            <ul id="send-list">
+                <li><a href="javascript:void(0);">北京</a></li>
+                <li><a href="javascript:void(0);">天津</a></li>
+                <li><a href="javascript:void(0);">河北</a></li>
+                <li><a href="javascript:void(0);">山西</a></li>
+                <li><a href="javascript:void(0);">内蒙古</a></li>
+                <li><a href="javascript:void(0);">辽宁</a></li>
+                <li><a href="javascript:void(0);">吉林</a></li>
+                <li><a href="javascript:void(0);">黑龙江</a></li>
+                <li><a href="javascript:void(0);">上海</a></li>
+                <li><a href="javascript:void(0);">江苏</a></li>
+                <li><a href="javascript:void(0);">浙江</a></li>
+                <li><a href="javascript:void(0);">安徽</a></li>
+                <li><a href="javascript:void(0);">福建</a></li>
+                <li><a href="javascript:void(0);">江西</a></li>
+                <li><a href="javascript:void(0);">山东</a></li>
+                <li><a href="javascript:void(0);">河南</a></li>
+                <li><a href="javascript:void(0);">湖北</a></li>
+                <li><a href="javascript:void(0);">湖南</a></li>
+                <li><a href="javascript:void(0);">广东</a></li>
+                <li><a href="javascript:void(0);">广西</a></li>
+                <li><a href="javascript:void(0);">海南</a></li>
+                <li><a href="javascript:void(0);">重庆</a></li>
+                <li><a href="javascript:void(0);">四川</a></li>
+                <li><a href="javascript:void(0);">贵州</a></li>
+                <li><a href="javascript:void(0);">云南</a></li>
+                <li><a href="javascript:void(0);">西藏</a></li>
+                <li><a href="javascript:void(0);">陕西</a></li>
+                <li><a href="javascript:void(0);">甘肃</a></li>
+                <li><a href="javascript:void(0);">青海</a></li>
+                <li><a href="javascript:void(0);">宁夏</a></li>
+                <li><a href="javascript:void(0);">新疆</a></li>
+                <li><a href="javascript:void(0);">台湾</a></li>
+                <li><a href="javascript:void(0);">香港</a></li>
+                <li><a href="javascript:void(0);">澳门</a></li>
+                <li><a href="javascript:void(0);">钓鱼岛</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-<h1>网上书店</h1>
+<!-- // header -->
+
+<!--<div class="box g-width clearfix bg-pink">-->
+    <!--<div class="one"></div>-->
+    <!--<div class="two"></div>-->
+    <!--<div class="three"></div>-->
+<!--</div>-->
+
 
 <script type="text/javascript" charset="UTF-8" src="../assets/js/jquery/jquery-2.1.4/jquery.min.js"></script>
 <script type="text/javascript" charset="UTF-8">
     $(function () {
         console.log('网上书店');
+
+        $('#send-to').mouseover(function () {
+            $(this).find('#send-list').show();
+            $(this).find('span').addClass('hover');
+        });
+
+        $('#send-to').find('span').mouseleave(function () {
+            $(this).removeClass('hover');
+            $('#send-list').hide();
+        });
+        $('#send-list').mouseleave(function () {
+            $(this).hide();
+            $('#send-to').find('span').removeClass('hover');
+        });
+
+        $('#send-list').find('a').click(function () {
+            $('#send-to').find('span').find('i').text($(this).text());
+        });
     });
 </script>
 
