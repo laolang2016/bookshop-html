@@ -313,5 +313,36 @@ order-cat
     color: red;
 }
 
+/*
+book type order
+*/
+#book-type-order-box{
+    width: 100%;
+    background-color: #F5F5F5;
+    border-top: 2px solid red;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+
+}
+
+#book-type-order > ul > li {
+    float: left;
+}
+
+#book-type-order > ul > li > a{
+    display: block;
+    padding: 0 15px;
+    height: 30px;
+    color: black;
+}
+
+#book-type-order > ul > li > a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
 
 

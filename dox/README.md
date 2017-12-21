@@ -18,7 +18,7 @@ div+sass+jquery+html5+es6
 
 ## 模块化
 
-div+sass+jquery+html5+es6
+div+sass+jquery+html5+es6+require.js
 
 ## template
 
