@@ -168,9 +168,7 @@
     color: red;
 }
 
-/*
-banner search Shopping Cart
-*/
+/*banner search Shopping Cart***********************************************************************/
 .logo{
     display: block;
     float: left;
@@ -313,9 +311,7 @@ order-cat
     color: red;
 }
 
-/*
-book type order
-*/
+/*book type order*******************************************************/
 #book-type-order-box{
     width: 100%;
     background-color: #F5F5F5;
@@ -342,9 +338,36 @@ book type order
     text-decoration: underline;
 }
 
+/*ad-top********************************************************************************/
 .ad-top{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/*storey-one***********************************************************************************/
+.storey-one{
+    height: 916px;
+}
+
+.storey-one-left{
+    float: left;
+    width: 190px;
+    height: 916px;
+    margin-right: 10px;
+}
+
+.storey-one-center{
+    float: left;
+    width: 750px;
+    height: 916px;
+    margin-right: 10px;
+}
+
+.storey-one-right{
+    float: left;
+    width: 240px;
+    height: 916px;
+
 }
 
 

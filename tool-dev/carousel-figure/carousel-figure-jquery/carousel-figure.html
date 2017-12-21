@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>carousel figure</title>
+    <link type="text/css" rel="stylesheet" href="reset.css"/>
+    <link type="text/css" rel="stylesheet" href="carousel-figure.css"/>
+
+    <style>
+        body{
+            padding: 50px;
+        }
+        .box{
+            /*width: 250px;*/
+            /*height: 105px;*/
+            width: 600px;
+            height: 350px;
+            border: 1px solid red;
+            float: left;
+            margin-left: 50px;
+        }
+        
+        .cf-box{
+            width: 500px;
+            height: 210px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>默认值，有自动播放</h2>
+    <div class="cf-box">
+        <div id="kmcf01" class="km-cf">
+            <ul>
+                <li><a href="#"><img src="image/1.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/2.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/3.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/4.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/5.png" alt="cf"></a></li>
+                <!--<li><a href="#"><img src="image/6.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/7.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/8.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/9.png" alt="cf"></a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <h2>无自动播放</h2>
+    <div class="cf-box">
+        <div id="kmcf02" class="km-cf">
+            <ul>
+                <li><a href="#"><img src="image/1.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/2.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/3.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/4.png" alt="cf"></a></li>
+                <li><a href="#"><img src="image/5.png" alt="cf"></a></li>
+                <!--<li><a href="#"><img src="image/6.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/7.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/8.png" alt="cf"></a></li>-->
+                <!--<li><a href="#"><img src="image/9.png" alt="cf"></a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" charset="UTF-8" src="jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8" src="jquery.carousel-figure.js"></script>
+
+<script type="text/javascript" charset="UTF-8">
+    $(function () {
+//        $('.km-cf').kmcf();
+
+        $('#kmcf01').kmcf();
+
+        $('#kmcf02').kmcf();
+
+//        $('#kmcf02').kmcf({
+//            autoPlay : false
+//        });
+
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+.km-cf{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.km-cf > ul:first-child{
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.km-cf > ul:first-child > li{
+    float: left;
+}
+
+.km-cf-btn-group{
+    width: auto;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.km-cf-btn-group > li{
+    float: left;
+    margin-left: 10px;
+}
+
+.km-cf-btn-group > li > a{
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    color: black;
+    text-align: center;
+    line-height: 20px;
+}
+
+.km-cf-btn-group > li > a:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+.km-cf-btn-group > li.hover a{
+    background-color: red;
+    color: #ffffff;
+}
