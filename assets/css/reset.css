@@ -54,20 +54,11 @@ img{
 a{
     text-decoration: none;
 }
-.fl{
-    float: left;
-}
-.fr{
-    float: right;
-}
+
 
 li{
     list-style: none;
 }
 
-.clearfix:after{content: ""; display: block; clear: both; }
-.clearfix{*zoom:1;}
 
-.bg-pink{background-color: pink;}
-.bg-blue{background-color: blue}
-.bg-black{background-color: black}
+

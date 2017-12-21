@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/*header*****************************************************************************************************/
+#header-box{
+    background-color: #F9F9F9;
+}
+
+#header{
+    height: 34px;
+}
+
+
+/*
+送至
+*/
+#send-to{
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    margin-top: 3px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#send-to span{
+    border: 1px solid #F9F9F9;
+    position: absolute;
+    border-bottom: none;
+    display: block;
+    line-height: 22px;
+    height: 22px;
+    width: 80px;
+    padding: 4px 22px 0 9px;
+    margin-top: 3px;
+    background: url(../../../assets/image/web/head_sprite.png) no-repeat right -303px;
+}
+
+#send-to .hover{
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    background-color: #fff;
+    background-position: right -320px;
+    z-index: 10;
+}
+
+#send-list{
+    position: absolute;
+    z-index: 5;
+    top: 29px;
+    left: 0;
+    background-color: #ffffff;
+    width: 298px;
+    border: 1px solid #e6e6e6;
+    padding: 0 0 10px 10px;
+    display: none;
+}
+
+#send-list li{
+    display: inline-block;
+    float: left;
+}
+
+#send-list li a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+}
+
+#send-list li a:hover{
+    color: red;
+}
+
+/*
+菜单
+*/
+#menu-box{
+    font-size: 12px;
+}
+
+#menu-box > ul{
+    padding-top: 2px;
+}
+
+#menu-box > ul > li{
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+#menu-box > ul > li > a{
+    display: block;
+    padding: 0 8px;
+    color: black;
+}
+
+#menu-box > ul > li > a:hover{
+    color: red;
+}
+
+#menu-box > ul > li > a:first-child{
+    display: inline-block;
+}
+
+#menu-box > ul > li span{
+    display: block;
+    width: 1px;
+    height: 10px;
+    margin-top: 12px;
+    background-color: #e6e6e6;
+}
+
+#login-link{
+    color: red !important;
+}
+
+.menu-drop{
+    padding-right: 15px;
+    background: url(../../../assets/image/web/head_sprite.png) no-repeat right -302px;
+    border: 1px solid #F9F9F9;
+    border-bottom: none;
+    position: relative;
+}
+
+.menu-drop > ul{
+    width: 79px;
+    left: -1px;
+    top: 25px;
+    display: none;
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    background-color: #ffffff;
+}
+
+.menu-drop > ul > li{
+    display: block;
+}
+
+.menu-drop > ul > li > a{
+    display: block;
+    color: black;
+    padding: 0 8px;
+
+}
+
+.menu-drop > ul > li > a:hover{
+    background-color: #f2f2f2;
+}
+
+.menu-drop:hover{
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff !important;
+    border-bottom: none;
+    background: url(../../../assets/image/web/head_sprite.png) no-repeat right -320px;
+}
+
+.menu-drop:hover > ul{
+    display: block;
+}
+
+.user-name > a{
+    color: red !important;
+}
+
+.logout-link > a:hover{
+    color: red;
+}
+
+
